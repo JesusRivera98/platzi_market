@@ -86,4 +86,12 @@ public class Product {
     public void setState(boolean state) {
         this.state = state;
     }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }
