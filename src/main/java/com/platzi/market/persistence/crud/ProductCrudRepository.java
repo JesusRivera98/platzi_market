@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface ProductCrudRepository extends CrudRepository<Product, Integer> {
     @Query(value = "SELECT * FROM products WHERE id_category = ?", nativeQuery = true)
-    List<Product> findByIdCategory(int idCategory);
+    List<Product> getByCategory(int idCategory);
 
 }
