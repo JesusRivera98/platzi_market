@@ -28,7 +28,7 @@ public class Purchase {
     @JoinColumn(name = "id_client", insertable = false, updatable = false)
     private Client client;
 
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", cascade = {CascadeType.ALL})
     private List<ProductPurchases> products;
 
     public Integer getIdPurchase() {
@@ -77,5 +77,21 @@ public class Purchase {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public List<ProductPurchases> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<ProductPurchases> products) {
+        this.products = products;
     }
 }
