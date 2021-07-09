@@ -3,6 +3,7 @@ package com.platzi.market.persistence;
 import com.platzi.market.domain.Product;
 import com.platzi.market.persistence.crud.ProductCrudRepository;
 import com.platzi.market.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,7 +11,10 @@ import java.util.Optional;
 
 @Repository
 public class ProductRepository implements com.platzi.market.domain.repository.ProductRepository {
+    @Autowired
     private ProductCrudRepository productCrudRepository;
+
+    @Autowired
     private ProductMapper mapper;
 
     @Override
