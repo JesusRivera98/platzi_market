@@ -27,6 +27,10 @@ public class Product {
 
     private boolean state;
 
+    @ManyToOne
+    @JoinColumn(name= "id_category", insertable = false, updatable = false)
+    private Category category;
+
     public Integer getIdProduct() {
         return idProduct;
     }

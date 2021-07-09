@@ -1,8 +1,6 @@
 package com.platzi.market.persistence.entity;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "product_purchases")
@@ -13,6 +11,14 @@ public class ProductPurchases {
     private Integer quantity;
     private Double total;
     private Boolean state;
+
+    @ManyToOne
+    @JoinColumn(name = "id_purchase", insertable = false, updatable = false)
+    private Purchase purchase;
+
+    @ManyToOne
+    @JoinColumn(name = "id_product", insertable = false, updatable = false)
+    private Product product;
 
     public ProductPurchasesPK getId() {
         return id;
