@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface ProductCrudRepository extends CrudRepository<Product, Integer> {
 
-    List<Product> findByIdCategory(int idCategory);
+    List<Product> findByIdCategoryOrderByNameAsc(int idCategory);
 
 }

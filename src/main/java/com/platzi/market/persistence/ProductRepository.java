@@ -14,6 +14,6 @@ public class ProductRepository {
     }
 
     public List<Product> getByCategory(int idCategory){
-        return productCrudRepository.findByIdCategory(idCategory);
+        return productCrudRepository.findByIdCategoryOrderByNameAsc(idCategory);
     }
 }
