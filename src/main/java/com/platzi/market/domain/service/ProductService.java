@@ -30,11 +30,10 @@ public class ProductService {
    }
 
    public boolean delete(int productId){
-        if(getProduct(productId).isPresent()){
+        return getProduct(productId).map(product -> {
             productRepository.delete(productId);
             return true;
-        }
-        return false;
+        }).orElse(false);
    }
 
 }
