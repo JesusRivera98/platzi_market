@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class PurchaseRepository implements com.platzi.market.domain.repository.PurchaseRepository {
+public class PurchaseRepository implements com.platzi.market.repository.PurchaseRepository {
     @Autowired
     private PurchaseCrudRepository purchaseCrudRepository;
 

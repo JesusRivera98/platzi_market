@@ -1,6 +1,6 @@
 package com.platzi.market.web.security;
 
-import com.platzi.market.domain.service.PlatziUserDetailsService;
+import com.platzi.market.service.PlatziUserDetailsService;
 import com.platzi.market.web.security.filter.JwtFilterRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

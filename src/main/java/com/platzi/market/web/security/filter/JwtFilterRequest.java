@@ -1,6 +1,6 @@
 package com.platzi.market.web.security.filter;
 
-import com.platzi.market.domain.service.PlatziUserDetailsService;
+import com.platzi.market.service.PlatziUserDetailsService;
 import com.platzi.market.web.security.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

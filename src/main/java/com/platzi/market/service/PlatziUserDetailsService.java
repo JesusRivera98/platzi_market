@@ -1,4 +1,4 @@
-package com.platzi.market.domain.service;
+package com.platzi.market.service;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

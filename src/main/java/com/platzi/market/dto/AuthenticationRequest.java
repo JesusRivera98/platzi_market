@@ -1,4 +1,4 @@
-package com.platzi.market.domain.dto;
+package com.platzi.market.dto;
 
 public class AuthenticationRequest {
     private String username;

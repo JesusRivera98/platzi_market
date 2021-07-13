@@ -1,4 +1,4 @@
-package com.platzi.market.domain.repository;
+package com.platzi.market.repository;
 
 import com.platzi.market.domain.Purchase;
 
